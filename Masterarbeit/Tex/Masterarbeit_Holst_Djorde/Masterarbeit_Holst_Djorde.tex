@@ -1,0 +1,1501 @@
+\documentclass[english,version-2020-11]{uzl-thesis}
+
+
+% Your thesis *must* be encoded in utf8 (unicode), which is the
+% default in most editors these days. Do *not* change this to latin8.
+
+\UzLThesisSetup{
+ % First, specify the institut or clinic at which the thesis was
+  % written. You get the logo file from them (make sure it has the
+  % correct size, namely the same as the example). If they do not have
+  % a logo, the university's default logo is used.
+  %
+  % The 'verfasst' gets two arguments. Change the first to {an der}
+  % for clinics, as in 'Verfasst = {an der}{Medizinischen Klinik I}'
+  %
+  Logo-Dateiname        = {uzl-thesis-logo-itcs.pdf},
+  Verfasst              = {am}{Institut für Theoretische Informatik},
+  %
+  % The titles:
+  %
+  Titel auf Deutsch     = {
+    TODO
+  }, 
+  Titel auf Englisch    = {
+    Inference of Causal Models based on Large Language Models' Domain Knowledge
+  },
+  %
+  % Author and supervisor:
+  % 
+  % Note that the 'Betreuer' or 'Betreuerin' is the supervisor, that
+  % is, the professor who officially supervises the thesis. If there
+  % is also an assistant of the professor who helped (typically a
+  % lot), use 'Mit Unterstützung von' to thank that person. If the
+  % thesis was mainly written 'externally' at some company or another
+  % institute, point this out using 'Weitere Unterstützung'. 
+  % 
+  % For your own name, do *not* add things like "BSc" or "BSc
+  % cand.". For the supervisor, you should normally include
+  % "Prof. Dr." or "PD Dr." (ask your supervisor, what is
+  % appropriate), but nothing more (so no
+  % "Univ.-Prof. Dr. Dr. h.c. mult." unless your supervisor insists).  
+  %
+  Autor                 = {Djorde Holst},
+  Betreuerin            = {Prof. Dr. Maciej Liśkiewicz},
+  % 
+  % Optional: Supporting persons and institutions. The text should be
+  % in German, even for an English thesis.
+  %
+  Mit Unterstützung von = {TODO},
+  % 
+  %   Weitere Unterstützung = {
+  %     Die Arbeit ist im Rahmen einer Tätigkeit bei der Firma Muster GmbH
+  %     entstanden.
+  %   },
+  %
+  %
+  % Your Degree Programm (Studiengang)
+  %
+  % Specify 'Bachelorarbeit' or 'Masterarbeit' and the degree
+  % programme. Make sure the name of programme is correct and not
+  % some abbreviation or some incorrect variant. For instance:
+  % 'Medizinische Ingenierwissenschaft', but not 'MIW';
+  % 'Medizinische Informatik', but not 'Medizin-Informatik';
+  % 'Informatik', but not 'Informatik (SSE)'.
+  %
+  % Use German names for German programmes and English names for
+  % English ones, so 'Infection Biology', not 'Infektionsbiologie'. 
+  % For programmes that have a German bachelor and an English master,
+  % use the German name for a bachelor thesis and the English name for
+  % the master thesis.
+  %
+  Masterarbeit,
+  Studiengang           = {Entrepreneurship in digitalen Technologien},
+  %
+  % Date on which the thesis is turned in German, formatted the
+  % traditional German way:
+  %
+  Datum                 = {18. Juni 2025},
+  %
+  % The English abstract. You must always provide abstracts in German
+  % and in English. 
+  %
+  Abstract              = {
+  
+  	Read QA again. 
+    It is not easy to write a thesis that does not only advance
+    science, but that is also a pleasure to read. While the scientific
+    contribution of a thesis is undoubtedly of greater importance, the
+    impact of \emph{writing well} should not be underestimated: If
+    the person who grades a thesis finds no pleasure in the reading,
+    that person are also unlikely to find pleasure in giving outstanding
+    grades. A well-written text uses good German or English phrasing with a clear and correct 
+    sentence structure and language rhythm, there are no spelling
+    mistakes and the author's arguments are presented in a
+    clear, logical and understandable manner using well-chosen
+    examples and explanations. In addition, a nice-to-read font and a
+    pleasing layout are also helpful. The \LaTeX\ class presented in
+    this document helps with the latter: It contains a number of
+    ready-to-use designs and 
+    takes care of many small typographical chores.
+  },
+  Zusammenfassung       = {
+    Es ist nicht leicht, eine Abschlussarbeit so zu schreiben, dass sie
+    nicht nur inhaltlich gut ist, sondern es auch eine Freude ist, sie
+    zu lesen. Diese Freude ist aber wichtig: Wenn die Person, die die 
+    Arbeit benoten soll, wenig Gefallen am Lesen der Arbeit findet,
+    so wird sie auch wenig Gefallen an einer guten Note
+    finden. Glücklicherweise gibt es einige Kniffe, gut lesbare
+    Arbeiten zu schreiben. Am wichtigsten ist zweifelsohne, dass
+    die Arbeit in gutem Deutsch oder Englisch verfasst wurde mit klarem
+    Satzbau und gutem Sprachrhythmus, dass keine Rechtschreib- oder
+    Grammatikfehlern im Text auftauchen und dass die Argumente der
+    Autorin oder des Autors klar, logisch, verständlich und gut
+    veranschaulicht dargestellt werden. Daneben sind aber auch gut
+    lesbare Schriftbilder und ein angenehmes Layout hilfreich. Die Nutzung
+    dieser \LaTeX-Vorlage hilft der Schreiberin oder dem Schreiber
+    dabei zumindest bei Letzterem: Sie umfasst gute, sofort nutzbare
+    Designs und sie kümmert sich um viele typographische
+    Details.  
+  },
+  %
+  % Optional: 'Danksagungen' (German) or 'Acknowledgements'
+  % (English). Both keys are optional and both have the same effect of
+  % adding an acknowledgements text after the abstracts and before the
+  % table of contents.
+  %
+  Acknowledgements      = {
+    This is the place where you can thank people and institutions, do
+    not try to do this on the title page. The only exception is in
+    case you wrote your thesis while working or staying at a company or abroad. Then you
+    should use the \Latex{Weitere Unterstützung} key to provide a text
+    (in German) that acknowledges the company or foreign
+    institute. For instance, you could use texts like »Die Arbeit
+      ist im Rahmen einer Tätigkeit bei der Firma Muster GmbH
+      entstanden« or »Die Arbeit ist im Rahmen eines
+      Forschungsaufenthalts beim Institut für Dieses und Jenes an der
+      Universität Entenhausen entstanden«. Do not name and thank
+      individual persons from the company or foreign institute on the
+      title page, do that here. 
+  },
+  % Bibliography style: Choose between
+  % 
+  % 'Alphabetische Bibliographie'
+  % for all degree programmes in the natural sciences 
+  % 
+  % 'Numerische Bibliographie'
+  % alternative for all other degree programmes
+  % 
+  % Either will load biblatex and setup the citation methods and the
+  % bibliography styles correctly. You should not mess with them.
+  % 
+  Alphabetische Bibliographie,
+  % Alternatively:
+  % Numerische Bibliographie
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%
+% Styling the thesis
+%
+%%%%%%%%%%%%%%%%%%%%
+%
+% \UzLStyle{computer modern oldschool design}
+%
+% \UzLStyle{computer modern basic design}
+%
+% \UzLStyle{computer modern scholary design}
+%
+% \UzLStyle{pagella basic design}
+%
+% \UzLStyle{pagella centered design}
+%
+% \UzLStyle{pagella contrast design}
+%
+% \UzLStyle{alegrya basic design}
+%
+% \UzLStyle{alegrya scholary design}
+%
+% \UzLStyle{alegrya stylish design}
+%
+\UzLStyle{alegrya modern design}
+
+
+
+%%%%%%%%
+%
+% Now, include the package you need here using \usepackage. 
+%
+% However, many standard packages are already loaded by the class:
+%
+% amsmath, amssymb, amsthm, babel, biblatex, csquotes, etoolbox,
+% filecontents, fontspec, geometry, hyperref, tikz (with libraries
+% arrows.meta, positioning and shapes), varioref, url 
+%
+% Indeed, in many cases you will not need any extra packages.
+%
+%%%%%%%
+
+
+
+\UzLThesisSetup { Abbildungsverzeichnis, Tabellenverzeichnis }
+\UzLStyle{Greek theorem labels}
+
+% Der Kram damit ich Javascript Code machen kann
+\lstdefinelanguage{javascript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+\uzldeflanguageshorthand{JavaScript}{style=code, language=javascript}
+
+%------------------------------------------------------------------------------------------------------------------------
+
+\begin{document}
+
+%
+% The title page and table of contents will be inserted automatically
+% here. 
+%
+
+%\chapter{Einleitung}
+\chapter{DELETE THIS LATER}
+
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% !!! Your action is needed here !!!
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%
+% Replace with your own introduction:
+
+Writing a bachelor's or master's thesis is not easy.\footnote{Neither
+  is writing a PhD thesis, but this document does \emph{not} concern
+  them. It is intended \emph{only} as a template for bachelor's and
+  master's theses written at the University of Lübeck. When you write
+  a PhD thesis, you are invited to find your own style.} You must
+\emph{research} the thesis's topic scientifically 
+-- and you must do 
+this well. You must \emph{describe} your research and the results --
+and you must use not just any words, but those that are used in the
+scientific community. Finally, you must \emph{write} everything
+\emph{down} -- by creating an electronic document that is a pleasure
+to read.
+
+It is the last item where this text may help: It is, first, a
+\emph{template} that you, dear student, can copy and then modify when
+writing your thesis. Of course, you still have to write the text, but
+the template will take care of numerous technical details for you. As
+a teaser, have a look at Listing~\vref{listing-hello-world}, which 
+shows the code for the ``hello world of theses''\footnote{In computer
+  science, a ``Hello World'' program is a minimal program in a given
+  programming language that   just prints these two words.} and which
+already produces a \textsc{pdf} file with five pages of so-called front
+matter (like the title page, the abstract or the table of contents)
+and already four pages of actual content -- not bad for a single page
+of code.
+
+
+\begin{Latex}[
+  float,
+  caption={
+    Minimal \LaTeX\ manuscript that generates a bachelor's thesis using the
+    \textsc{uzl-thesis} class. The manuscript has to be processed twice
+    using \Latex{lualatex}, followed by a run of \Latex{bibtex},
+    followed by a run of \Latex{lualatex} once more. 
+  },
+  label={listing-hello-world}
+  ]
+\documentclass[english, version-2020-11]{uzl-thesis}
+
+\UzLStyle{computer modern oldschool design}
+
+\UzLThesisSetup{
+  Bachelorarbeit,
+  Verfasst = {am}{Institut für tolle Forschung},
+  Titel auf Deutsch = {Hallo Welt},
+  Titel auf Englisch = {Hello World},
+  Autor = {Max Mustermann},
+  Betreuerin = {Prof. Dr. Petra Wichtig-Wichtig},
+  Studiengang = {Irgendwas mit Tieren},
+  Datum = {1. Juli 2020},
+  Abstract = {It is about saying ``hello'' to the world.},
+  Zusammenfassung = {Es geht darum, der Welt »Hallo« zu sagen.},
+  Numerische Bibliographie
+}
+
+\begin{document}
+  \chapter{Introduction}
+  \section{Contributions of this Thesis}
+  This thesis says ``Hello World!'', see also \cite{Kernighan1974}.
+  \section{Related Work}
+  There are many hello world programs.
+  \section{Structure of this Thesis}
+  In Chapter~\vref{chapter-main}, we say hello.
+  
+  \chapter{Main Chapter}
+  \label{chapter-main}
+  Hello World!
+
+  \chapter{Conclusion}
+  Saying hello world is quite easy.
+
+  \begin{bibtex-entries}
+    @TechReport{Kernighan1974,
+      author = {Brian Kernighan},
+      title = {Programming in C – A Tutorial},
+      institution = {Bell Laboratories},
+      year = {1974}
+    }
+  \end{bibtex-entries}
+\end{document}
+\end{Latex}
+
+This template document is a \LaTeX\ document that uses the
+\textsc{uzl-thesis} document class. This means that in order to work with it,
+you need to use Donald Knuth's \TeX\ text processing system
+\cite{Knuth1986}, Leslie Lamport's \LaTeX\ extension of \TeX\
+\cite{Lamport1994} and my
+(that is, Till Tantau's) 
+\textsc{uzl-thesis} document class. In particular, you will need to learn
+\LaTeX\ if you have not already done so (definitely a good idea
+anyway). 
+
+Some students may wonder at this point whether this text
+applies to them at all since they do not intend to (or perhaps even
+may not) use \LaTeX\ for their thesis. However, while these readers
+can safely skip the technical details of how the \textsc{uzl-thesis} class is
+used, I would like to urge them (and, of course, everyone else) to read
+Chapter~\ref{chapter-tips}, starting \vpageref{chapter-tips}: In this
+chapter, I explain my views on 
+``how to write a good thesis'' and try to give as many practical hints
+as possible that anyone attempting to write a thesis will hopefully
+find useful -- independently of which text processing tool they use.
+
+The ``hints'' given in Chapter~\ref{chapter-tips} address many of the
+problems that I see students struggle with when they write their
+thesis. Of course, I cannot give a magic recipe for creating a
+scientific breakthrough. But I \emph{can} give you hints on how to
+put a breakthrough into words that other people understand and will
+like to read -- and, hopefully, will like to reward with good grades.
+
+Please be aware that the views expressed in Chapter~\ref{chapter-tips}
+are \emph{my} views and some of them may not be shared by other
+professors and, more importantly for you, they may not be shared by
+your adviser -- who happens to be the person who will grade your
+thesis. This means that you better \emph{always listen to your
+  adviser} and do what she or he asks you to do.\footnote{If your adviser
+thinks the thesis should be typeset using a typewriter font with
+double line spacing and all headlines should be in pink, then I may
+(very) strongly disagree with that, but you do not have that luxury
+and you just typeset everything in double line spacing pink
+typewriter.} The excuse ``but 
+Professor Tantau writes that\dots'' may be flattering to me, but it
+will not get you high grades.
+
+So, \emph{always listen to your adviser.} You will read this again
+later on. Repeatedly. 
+
+
+
+\dots
+
+This thesis\footnote{Actually, ``this text'' would be more appropriate
+  since this is obviously not a real thesis. But this is what you
+  would write in a real thesis at this point.} consists of two main
+chapters: Chapter~\ref{chapter-use} describes how the
+\textsc{uzl-thesis} \LaTeX\ class is used on a technical level. This chapter starts with the
+technical details of how you setup the \TeX\ work-flow in conjunction
+with the class (where to install it and which programs to use), but
+the bulk of the chapter is taken up by the different aspects of using
+that class -- like how bibliographies are created or how math text
+should be written. The explanations only try to highlight what is
+important and different when using the \textsc{uzl-thesis} class; they
+are not intended as a complete introduction to \LaTeX. In
+Chapter~\ref{chapter-tips}, I then list the many small and big things
+you should consider and take care of when writing a thesis. I will
+explain how long the different parts should be, I will sketch why the
+abstract, the introduction and the conclusion all summarize the main
+part of the thesis, but still all three need to be written, I will
+explain why you should write ``we will show that'' and not ``I will
+show that'' but ``I believe that'' and not ``we believe that'' and I
+will give recommendations on many other topics. But of course,
+whatever you read in the following, remember that you must
+\emph{always listen to your adviser!}  
+
+
+
+
+\section{Test Kram}
+
+With the thesis class, you add figures and tables using the standard
+\texttt{figure} and \texttt{table} environments. You should always add
+a caption to a figure and the caption should be below it, while the
+caption of a table should be above it. You should always label the
+figure and you \emph{must} reference all figures at least once in the
+text. See Question~\vref{qu-captions} for some hints on what to write
+in captions. 
+
+
+\section{Creating Graphics}
+\label{section-graphics}
+
+\subsection{External Graphics}
+\label{section-external}
+
+Graphics (like plots, images, drawings or other data visualizations)
+can be added to a \LaTeX\ document in two ways: First, you can include
+an \emph{external graphic} like a \textsc{pdf} file or a \textsc{jpg} 
+file. Second, you can use  “describe your graphic using \LaTeX\
+commands”. We discuss external graphics next, internal ones later on.
+
+You include external graphics using the includegraphicscommand,
+which is a standard \LaTeX\ command. There is no need to include any
+packages for this, it is available automatically. For instance, you
+could say:
+
+\begin{Latex}
+The university slogan \includegraphics{uzl-thesis-logo-slogan.pdf} in a sentence.
+\end{Latex}
+to get: “The university slogan \includegraphics{uzl-thesis-logo-slogan.pdf} in a
+sentence.” 
+
+As can be seen, the effect of the includegraphics command is to
+directly include the graphic at the very position in the line where
+the command is used. Indeed, from \TeX's point of view, an external
+graphic is indistinguishable from a black rectangle of the same size
+as the graphic.
+
+You will rarely wish to put a graphic in the middle of a sentence
+(although there are applications). Instead, you will usually place it
+inside a |{figure}| environment: Recall that it is the job of the
+environment to creating “floating” text with a caption -- and it is
+then the job of includegraphics to replace the “text” by a
+picture. Here is an example of how you will usually do this:
+
+\begin{Latex}
+\begin{figure}[htpb]
+  \centering
+  \includegraphics{uzl-thesis-logo-uzl.pdf}
+  \caption{The logo of the University of Lübeck. It consists...}
+  \label{fig-logo}
+\end{figure}
+\end{Latex}
+The result is Figure~\vref{fig-logo}.
+\begin{figure}[htpb]
+  \centering
+  \includegraphics{uzl-thesis-logo-uzl.pdf}
+  \caption{The logo of the University of Lübeck. It consists of the
+    university's seal together with the text “Universität zu
+    Lübeck”. The corporate design manual of the university requires
+    this logo to be put at the upper left corner of title pages of
+    university publications.}
+  \label{fig-logo}
+\end{figure}
+
+The includegraphicscommand takes many options, the most important
+of which are likely |height| and |width|. These allow you to scale the
+graphic to a given height or width. \emph{Avoid these options whenever
+  possible.} The reason is that most graphics have a natural size
+(such as the logo) in which the text and fonts in the graphic are at
+the correct sizes. Any scaling will cause the graphic to become too
+large or too small. \emph{Scaling is evil} and you will find more
+comments on this in Question~\vref{qu-scaling}. All professors I
+know find scaled-down graphics with unintelligible text \emph{among
+  the most irritating things a student could  possibly do.}  
+
+This means that when you \emph{create} graphics with another program,
+make \emph{sure} that any text in the external graphic has the same
+size as normal text in the thesis and that \emph{no} scaling is needed.
+
+\subsection{Inline Graphics via Ti\emph kZ}
+\label{section-tikz}
+
+The alternative to external graphics are \emph{internal}
+graphics. They are created using special \LaTeX\ commands such as the
+following:
+\begin{Latex}
+\tikz \draw [->] (0,0) -- (1cm, 2mm);
+\end{Latex}
+which yields \tikz \draw [->] (0,0) -- (1cm, 2mm); when used in a
+paragraph. A more complex example would be 
+\begin{Latex}
+\tikz [baseline, anchor=base] {
+  \node [block = emph]                             (h) {Hello};
+  \node [small node = emph blue, right = 5mm of h] (w) {Welt};
+  \draw (h) edge[bend left=15, <->] (w);
+}
+\end{Latex}
+which yields
+\tikz [baseline, anchor=base] {
+  \node [block = emph]                              (h) {Hallo};
+  \node [small node  = emph blue, right = 5mm of h] (w) {Welt};
+  \draw (h) edge[bend left=15, <->] (w);
+}.
+
+The Ti\emph kZ package is used for these inline graphics and it is
+loaded automatically -- so \emph{if} you are going to create inline
+graphics, use Ti\emph kZ. If you wish to learn Ti\emph kZ, please read
+the tutorials from the manual \cite[Part I]{Tantau2019}.
+
+The thesis class sets up some styles for Ti\emph kZ that you can
+either explicitly use or that are generally set up. For instance, the
+default arrow tip is setup according to the chosen design as well as
+the standard line width. You usually do not need to worry about these
+automatic settings.
+
+
+
+\subsection{Predefined Ti\emph kZ Styles}
+
+There are several styles that are predefined and that you are
+“invited” to use: 
+
+\begin{description}
+\item[base shape] This is a style on which the styles described next
+  are based. It is to be used with the |node| command and will, for
+  instance, fill the node with white color and will draw a thick
+  border around it. The color that is used for the border can be
+  passed as an argument, but see below for which colors you should
+  use. Here is a simple example how this style is used:
+  \begin{Latex}
+\tikz \node [base shape, ellipse] {Hello};    
+  \end{Latex}
+  yields
+\tikz [baseline, anchor=base] \node [base shape, ellipse] {Hello};.
+
+  The default color used for shapes is defined by the design (either
+  black or the color |Ozeangruen|, which is the university's corporate
+  design color, depending on the design). 
+\item[small shape] This style can be used in addition to |base shape|
+  and will change the font to a smaller size and will reduce 
+  the inner seperation:
+  \begin{Latex}
+\tikz \node [base shape, small shape, ellipse] {Hello};    
+  \end{Latex}
+  yields
+\tikz [baseline, anchor=base] \node [base shape, small shape, ellipse] {Hello};.
+\item[block] A rectangular node: |\tikz \node [block] {Hello};| yields
+\tikz [baseline, anchor=base] \node [block] {Hello};.
+\item[small block] A smaller version: Saying
+|\tikz \node [small block] {Hello};|
+  will now give
+\tikz [baseline, anchor=base] \node [small block] {Hello};.
+\item[node] A circular node, especially in a graph: |\tikz \node [node] {$n$};|
+  yields
+\tikz [baseline, anchor=base] \node [node] {$n$};.
+\item[small node] Small version: |\tikz \node [small node] {$n$};|
+  yields
+\tikz [baseline, anchor=base] \node [small node] {$n$};.
+\item[tiny node] A small, unnamed circular node: |\tikz \node [tiny node] {};|
+  yields
+  \tikz \node [tiny node] {};.
+\item[paper] This is a special style that installs a “paper-like
+  background” as fill color. I recommend using this style as a
+  background for all cases where you wish to create the impression of
+  showing an “original text” from another paper, that is, where you
+  wish to show that the text or graphic “looks like this in the
+  original”. Consider for instance,
+  \begin{Latex}
+\begin{figure}[htpb]
+  \centering
+  \tikz \node [paper] {\includegraphics{uzl-thesis-logo-uzl.pdf}};    
+  \caption{The logo of the University of Lübeck, but now...}
+  \label{fig-logo-paper}
+\end{figure}
+\end{Latex}
+which yields Figure~\ref{fig-logo-paper}.
+\begin{figure}[htpb]
+  \centering
+  \tikz \node [paper] {\includegraphics{uzl-thesis-logo-uzl.pdf}};    
+  \caption{The logo of the University of Lübeck, but now with a
+    “paper-like background”. Note how, compared to
+    Figure~\ref{fig-logo}, a much stronger impression is created that
+    this figure depicts something printed.}
+  \label{fig-logo-paper}
+\end{figure}
+\end{description}
+
+An example of how many of these styles can be used is shown in
+Figure~\vref{fig-tikz-white}. 
+
+\newcommand\examplepicture{
+
+  \tikzset{anchor=mid,yscale=.85}
+
+  %
+  % Merge sort
+  %
+
+  \node at (0,5.5) {\uzlemph{Merge sort visualization}};
+  
+  \node [block] (input) [minimum width=6cm] at (0,4.25)        { $A_1,\dots,A_n$ };
+  \node [block] (l1)    [minimum width=2.8cm] at (-1.6,3)      { $A_1,\dots,A_{n/2}$ }; 
+  \node [block] (l2)    [minimum width=2.8cm] at (1.6,3)       { $A_{n/2+1},\dots,A_n$ }; 
+
+  \node (l11) at (-2.2,1.75) {$\vdots$};
+  \node (l12) at (-1,1.75) {$\vdots$};
+  \node (l21) at (1,1.75) {$\vdots$};
+  \node (l22) at (2.2,1.75) {$\vdots$};
+
+  \node [small node] (m1)  at (-1.6,1) {$\mu$};
+  \node [small node] (m2)  at (1.6,1) {$\mu$};
+  
+  \node [block=emph] (b1)    [minimum width=2.8cm] at (-1.6,0) { $B_1,\dots,B_{n/2}$ }; 
+  \node [block=emph] (b2)    [minimum width=2.8cm] at (1.6,0)  { $B_{n/2+1},\dots,B_n$ }; 
+
+  \node [small node=emph, label=right:(merge)] (m3)  at (0,-1) {$\mu$};
+  \node [block] (output) [minimum width=6cm] at (0,-2)         { $B_1,\dots,B_n$ };
+  
+  \draw (input)  edge [->] (l1)
+                 edge [->] (l2)
+        (l1)     edge [->] (l11)
+                 edge [->] (l12)
+        (l2)     edge [->] (l21)
+                 edge [->] (l22)
+        (m1)     edge [<-] (l11)
+                 edge [<-] (l12)
+        (m2)     edge [<-] (l21)
+                 edge [<-] (l22)
+        (m1)     edge [->] (b1)
+        (m2)     edge [->] (b2)
+        (m3)     edge [<-] (b1)
+                 edge [<-] (b2)
+                 edge [->] (output);
+
+  \draw [overlay,very thick, structure] (3.5,-3.5) -- (3.5,5);
+
+  % 
+  % The blocks
+  %
+
+  \node at (7,5.5) {\uzlemph{Predefined styles}};
+  
+  \foreach \style [count=\i] in {
+    block,
+    block=emph,
+    block=emph blue,
+    block=emph green,
+    block=emph black,
+    small block,
+    small block=emph,
+    small block=emph green,
+  } {
+    \expandafter\node\expandafter [\style, anchor=mid west] at (4,5.25-\i) {\strut\ttfamily\style};
+  }
+  
+  \foreach \style/\what [count=\i] in {
+    node/$n$,
+    node=emph/$n$,
+    node=emph blue/$n$,
+    node=emph green/$n$,
+    node=emph black/$n$,
+    small node/$n$,
+    small node=emph/$n$,
+    tiny node/,
+  } {
+    \expandafter\node\expandafter [\style, anchor=mid, label=right:\ttfamily\style] at (8.25,5.25-\i) {\what};
+  }  
+}
+
+
+\begin{figure}[htpb]
+  \centering
+  \tikz[thesis outline shapes]{\examplepicture}
+  \caption{An example visualization created with Ti\emph kZ, see the
+    template source for the code details. In the graphic, a number of
+    predefined styles are used (like \Latex{node} or \Latex{small block}), each of which can be passed an optional color. These
+    styles are setup automatically to produce visually pleasing shapes
+    that go well with the overall layout and fonts.}
+  \label{fig-tikz-white}
+\end{figure}
+
+
+
+\subsection{Predefined Colors}
+
+The thesis class defines a number of colors that you should use in
+graphics. You should \emph{not} use colors like |red| or |green|: Pure
+green is a very light color and text in this color is hard to read on
+paper and impossible to read in an electronic document. Instead of
+pure green, a rather dark version of green must be used. In contrast,
+pure blue is already rather dark and only needs to be darkened very
+slightly. The following colors have been setup to provide a uniform
+contrast against a white background:
+
+\begin{description}
+\item[emph]
+  A red color.
+  Used in an outline
+  \tikz[baseline] \draw [thick,emph] (0,-.2ex) rectangle ++(3.2ex,1.6ex);
+  and filled
+  \tikz[baseline] \fill[emph] (0,.5ex) circle[radius=.8ex];
+\item[emph red] This is the same as |emph|.
+\item[emph green]
+  Used in an outline
+  \tikz[baseline] \draw [thick,emph green] (0,-.2ex) rectangle ++(3.2ex,1.6ex);
+  and filled
+  \tikz[baseline] \fill[emph green] (0,.5ex) circle[radius=.8ex];
+\item[emph blue]
+  Used in an outline
+  \tikz[baseline] \draw [thick,emph blue] (0,-.2ex) rectangle ++(3.2ex,1.6ex);
+  and filled
+  \tikz[baseline] \fill[emph blue] (0,.5ex) circle[radius=.8ex];
+\item[emph black] This is just black:
+  Used in an outline
+  \tikz[baseline] \draw [thick,emph black] (0,-.2ex) rectangle ++(3.2ex,1.6ex);
+  and filled
+  \tikz[baseline] \fill[emph black] (0,.5ex) circle[radius=.8ex];
+\end{description}
+
+Looking for more colors? Think carefully whether you really need more:
+It is hard to remember too many colors as a reader. It may be better
+to use a different style (like thicker lines) for
+purposes of further differentiation.
+
+
+
+\subsection{Designs for Ti\emph kZ Graphics}
+
+In addition to the designs for the whole thesis, see
+Section~\ref{section-styling}, there are also three designs for
+graphics. Each of them redefines |base shape|, resulting in a
+different “look”:
+
+
+\begin{description}
+\item[thesis outline shapes] This Ti\emph kZ style defines
+  |base shape| and all styles built on top of it (like |block| and |node|)
+  to a white background and simple thick line around the shape. For
+  instance:
+\begin{Latex}
+\tikzset{thesis outline shapes} % generally set the design
+\tikz \node [block] {Hello};    
+\end{Latex}
+yields
+{%
+\tikzset{thesis outline shapes}% generally set the design
+\tikz[baseline, anchor=base] \node [block] {Hello};%    
+}. See Figure~\vref{fig-tikz-white} for a larger example.
+\item[thesis box shapes] This style defines |base shape| similarly to
+  the outline style, but fills the shapes with a light background:
+\begin{Latex}
+\tikzset{thesis box shapes} % generally set the design
+\tikz \node [block] {Hello};    
+\end{Latex}
+yields
+{%
+\tikzset{thesis box shapes}% generally set the design
+\tikz[baseline, anchor=base] \node [block] {Hello};%    
+}. See Figure~\vref{fig-tikz-box} for an example.
+\item[thesis flat shapes] This style redefines |base shape|
+  differently: The shapes are only filled and no border is 
+  drawn. This creates a stylish “flat” look:
+\begin{Latex}
+\tikzset{thesis flat shapes} % generally set the design
+\tikz \node [block] {Hello};    
+\end{Latex}
+yields
+{%
+\tikzset{thesis flat shapes}% generally set the design
+\tikz[baseline, anchor=base] \node [block] {Hello};%   
+}. See Figure~\vref{fig-tikz-flat} for a larger example.
+\end{description}
+
+
+
+
+\begin{figure}[htpb]
+  \centering
+  \tikz[thesis box shapes]{\examplepicture}
+  \caption{The same visualization as in Figure~\ref{fig-tikz-white},
+    but with the \Latex{thesis box shapes} option set. As can be
+    seen, this option causes the predefined shapes to be filled. It is
+    a matter of taste whether one prefers this over the \Latex{outline}
+    style from Figure~\ref{fig-tikz-white}.}
+  \label{fig-tikz-box}
+\end{figure}
+
+\begin{figure}[htpb]
+  \centering
+  \tikz[thesis flat shapes]{\examplepicture}
+  \caption{Once more, the same visualization as in Figure~\ref{fig-tikz-white},
+    but now with \Latex{thesis flat shapes} option set. This option
+    creates more ``flat'' shapes (without a border). Once more it is a
+    matter of taste what one prefers.}
+  \label{fig-tikz-flat}
+\end{figure}
+
+
+
+\begin{C}[ float,
+caption = {The first C program from the tutorial in \cite{Kernighan1974}.},
+label = {lst-hello} ]
+main( ) {
+printf("hello, world"); 
+}
+\end{C}
+
+\begin{Pseudocode}
+print ``Please enter a number below 10.'' 
+input $n$
+if $n > 9$ then
+print ``Too high!'' 
+else
+print ``Thank you!'' 
+\end{Pseudocode}
+
+
+\begin{conjecture}[Goldbach]
+Every even integer $n \ge 4$ is the sum of two primes.
+\end{conjecture} 
+\begin{lemma}
+Every $n \in \{4,6,8,10\}$ is the sum of two primes. 
+\end{lemma}
+\begin{proof}
+We have $4 = 2+2$, $6=3+3$, $8 = 5+3$ and $10 = 5+5$. 
+\end{proof}
+
+
+\begin{table}[htpb]
+\caption{Sounds made by different kinds of animals...} \label{fig-tab1}
+\centering
+\begin{tabular}{lp{5cm}}
+\uzlhline
+\uzlemph{Animal} & \uzlemph{Sound} \\ 
+\uzlhline 
+Cat & Meow \\
+Dog & Wuff or bark \\ 
+\uzlhline \end{tabular}
+\end{table}
+
+
+\begin{figure}[htpb]
+\centering
+\includegraphics{uzl-thesis-logo-uzl.pdf}
+\caption{The logo of the University of Lübeck. It consists...} \label{fig-logo}
+\end{figure}
+
+The \TeX\ system \cite{causal_order} is due to \citeauthor{causal_order}.\\
+The \TeX\ system \cite{causal_graphs} is due to \citeauthor{causal_graphs}.\\
+The \TeX\ system \cite{causal_reasoning} is due to \citeauthor{causal_reasoning}.\\
+
+Wie in \ref{label-test1} beschrieben. Oder auch in \vref{label-test1}.
+
+\tikz [baseline, anchor=base]
+{
+\node at (0,0) [small node] (P) {P};
+\node at (1,0) [small node] (C) {C};
+\path[->] (P) edge (C);
+}
+
+%-------------------------------------------------------------------------------------
+\chapter{Introduction}
+\label{chapter-Introduction}
+
+
+%-------------------------------------------------------------------------------------
+\chapter{Background}
+\label{chapter-Background}
+
+Recession > Lay offs > Less money to spend > Recession
+
+\section{Large Language Models(LLMs)}
+\label{section-LLMs}
+
+\cite{causal_graphs}
+
+
+
+\section{Causality}
+\label{section-Causality}
+
+Causality describes a cause-and-effect relationship. One such relationship is the well-known fact that smoking causes lung cancer. Thus, we can say there is a causal relationship between smoking and lung cancer. 
+\cite{causal_graphs}
+
+\subsection{Causal Diagrams}
+\label{subsection-Causal_Diagrams}
+
+Causal diagrams, also referred to as causal graphs, are a way to visualize causality. To do so, I will use directed acyclic graphs (DAGs). A DAG is made out of nodes and edges. The nodes represent the variables, both measured and unmeasured. To display the node, it is common to use the corresponding variable name. Since a DAG is directed, the edges are arrows that connect parent nodes with child nodes (Parent $\rightarrow$ Child). In our case, the parent node represents an action or cause, the child represents the outcome, and the arrow represents a direct causal relationship. Accordingly, a missing edge indicates a missing direct causal relationship between two nodes. 
+
+Furthermore, these edges can be weighted. In our case, this weight would most likely represent the probability of P causing C (Wrong? Do we even have weighted graphs? TODO). 
+
+Since a DAG is also acrylic, these edges are not allowed to draw cycles or loops. We need this limitation because a variable can not be the cause of itself. 
+
+Additionally, for the DAG to be causal, it must include all common causes of any pair of variables. (TODO leave in?)
+
+Overall, it represents causal pathways. This means every variable is the effect of all its ancestors and the cause of all its descendants.
+
+A known to be correct causal DAG is named a ground truth DAG.
+
+\cite{causal_graphs}
+
+
+
+
+\subsection{Causation vs. Correlation}
+\label{subsection-Causation_vs._Correlation}
+
+We might be tempted to think that a strong correlation in our data also means that there is a cause-and-effect relationship. But does the crowing rooster make the sun rise? No, it does not. Strongly correlated variables do not necessarily have a cause-and-effect relationship. Especially when we look at observational data, correlations are unlikely to hint at a causal relationship. This is because, most of the time, a human has already predicted an outcome and engaged in behavior that leads to a more desirable one. This is also why there can be casual relationships between variables that have no observable correlation. Someone intervened, but it was not measured. 
+
+TODO Maybe the sailor example if there is time. Maybe in Confounding for masking
+
+This intervening individual would be a confounding factor. IS IT THOUGH? TODO 
+
+\cite{mixtape} chapter 1 Intoduction \\
+
+
+\subsection{Covariates}
+\label{subsection-Covariates}
+
+Invariance means the causal relationship between X-> Y is still there even if we intervene on other paths.
+Invariant means unchanged.
+The Markov blanket is used to train models from observational data. It leads to the optimal prediction of Y in this specific training model. 
+The Markov Blanket is the minimum set of variables to condition on to block all paths from variables outside the set. This result leads to the optimal prediction of Y in the SAME DISTRIBUTION. The same distribution means there is no additional intervention or something similar. In other words, the graph has to stay the same. 
+Suppose we want to predict Y in another distribution because we added an intervention node to the original training distribution. In that case, we only use the parents of Y for the conditioning set for optimal prediction. This is because if we intervene on any other node than the parents, we could be masking causal association or worse. This is called the optimal robust prediction.
+
+\subsection{Confounders}
+\label{subsection-Confounders}
+
+TODO
+
+
+A confounding factor influences both the cause and the effect variable. 
+By influencing both variables, a confounding factor can lead to three things:
+\\
+1. A false assumption of cause and effect. For example, by being the actual
+cause of both. So both variables might rise and fall concurrently, giving the 
+impression of being in a causal relationship.
+\\
+2. The confounder could be the real cause. By not accounting for it one could
+identify the wrong cause. This wrong cause would most likely be associated with the 
+confounder.
+\\
+3. Choosing the wrong direction. TODO
+\\
+cite Chat GPT lul can't do that, can you?
+
+\subsection{Colliders}
+\label{subsection-Colliders}
+
+
+
+\subsection{Causal Inference}
+\label{subsection-Causal_Inference}
+
+Causal Inference is about inferring the causal effect of a specific treatment ($T$) or action on an outcome ($Y$). Let us assume that the treatment is taking a pill. We either let a person ($i$) take the pill (do($T=1$)) or we do not (do($T=0$)). This leads to two possible outcomes: 
+
+the outcome where person $i$ did take the pill ($Y_i |_{\text{ do}(T=1)} \triangleq Y_i(1)$) 
+
+and the outcome where person $i$ did not ($Y_i |_{\text{ do}(T=0)} \triangleq Y_i(0)$).\\
+Now, we can measure the effect, also known as the individual treatment effect (ITE), through $Y_i(1) - Y_i(0)$. Assuming that $Y_i(x)$ can be $0$ or $1$, we could get three different ITEs: $1$, $0$, and $-1$. $1$ and $-1$ would mean that the treatment had an effect while $0$ would mean it did not.\\
+ \\
+However, it is not as simple as it looks. We need to know $Y_i(1)$ and $Y_i(0)$, but we can only choose one path per person. The only way to get the other outcome is to estimate it. This estimated outcome is known as a counterfactual, while the outcome of the chosen path is known as a factual. There are methods to estimate those counterfactuals. 
+(TODO) I'll explain some of them in cite \dots, \dots, and \dots.
+But for now, we assume we know how to get them.
+
+If we have more records of our pill treatment, we can compute all their measured effects and take the average treatment effect (ATE). This average is also known as the expected value ($\mathbb{E}$) of $Y_i(1) - Y_i(0)$ or  $\mathbb{E} [Y_i(1) - Y_i(0)]$. This is the same as taking the average of $Y_i(1)$ and $Y_i(0)$ and then subtracting them ($\mathbb{E} [Y_i(1)] - \mathbb{E} [Y_i(0)]$). We know that because of the linearity of expectation. 
+
+\cite{causal_course} 2.3
+
+\subsection{Identifiability}
+\label{subsection-Identifiability}
+
+2.5
+
+\subsection{Ignorabilty and Exchangability}
+\label{subsection-Ignorabilty_and_Exchangeability}
+
+2.4
+
+
+\subsection{Counterfactuals}
+\label{subsection-Counterfactuals}
+
+
+
+
+
+
+
+
+\subsection{}
+\label{subsection-}
+
+
+\subsection{Intervention and Randomized Experiments}
+
+\subsection{Judea Pearl’s Framework}
+
+\subsection{Evaluation Methods}
+
+Dtop
+Structural Hemming Distance
+
+\subsection{Challenges and Open Questions}
+
+\subsection{Causal Order}
+\label{subsection-Causal_Order}
+
+Do this or just on previous work?
+
+
+\cite{causal_order}\\
+
+%-------------------------------------------------------------------------------------
+\chapter{Previous Work}
+\label{chapter-PreviousWork}
+
+\citetitle{causal_graphs}\\
+\citetitle{causal_reasoning}\\
+\citetitle{causal_order}\\
+
+\section{Can Large Language Models Build Causal Graphs?}
+\label{section-Causal_Graphs_Paper}
+
+
+
+\subsection{The Algorithm}
+\label{subsection-Causal_Graphs_Paper_Algorithm}
+
+In this paper \citeauthor{causal_graphs} used a pairwise prompting strategy. First, they computed every possible ordered pair, also called a tuple, of nodes from the given DAG. Then, they let the expert evaluate if a statement is true or false. Those statements stayed the same for every tuple (A, B). For example: "A increases the risk of developing B" If the statement was found to be true, this would have meant there is that the given tuple was connected via a directed edge (A $\rightarrow$ B). And if the statement was false, there would be no DIRECTED edge between A and B. A connection from B to A would have been still possible in both cases. 
+
+\cite{causal_graphs}\\
+
+
+
+\section{Causal Order: The Key to Leveraging Imperfect Experts in Causal Inference}
+\label{section-Causal_Order_Paper}
+
+- Pairwise prompts are not able to distinguish between direct and indirect edges. 
+
+-A causal Graph is not a great output for domain knowledge because edges indicate a DIRECT CAUSAL RELATIONSHIP. So, the incorporation of potential mediators between two variables is necessary.
+- To alleviate that problem, they introduce causal order 
+(- Causal order describes a sequence or permutation of nodes ($\pi$) wherein all nodes before a given node $X_i$ cannot be its descendants and all nodes after it cannot be its ancestors. This means the only POSSIBLE ancestors are in front of the given node and all POSSIBLE descendants are behind it. But not every node in front of/behind it has to be its ancestor/descendant. ) TODO this is only true for $D_{top}=0$ isn't it?
+- Formal Definition for causal order?
+- Causal order only determines an ancestor-descendant relationship. So to draw an edge between two variables we do not need a DIRECT CAUSAL RELATIONSHIP.
+
+
+- Formal Def. for Dtop?
+- They use the topological divergence metric $D_{top}$  as quality measurement. 
+- In this paper $D_{top}$ is calculated by counting the not recoverable edge in the merged final DAG. Not recoverable edges face in the opposite direction than they do in the ground truth DAG. 
+(- $D_{top}$ is a better measurement than SHD because $D_{top}$ is a measurement for causal order while SHD is a measurement for graph equality. $D_{top}$ can be $0$ for a changed sequence or permutations of the same order. But a changed graph will lead to SHD $> 0$. ) Is this true? TODO
+
+
+- Most other papers use graphs as outputs for the domain knowledge, which are "final" and not adaptable. This is problematic because we often want to process them further. So the DAG being "final" leads to errors in further processing.
+- Causal order is not final, it can adapt missing variables later on 
+- Given only a subset of variables, an optimal perfect expert will always predict a correct causal order for the whole set, but a causal graph could be incorrect. 
+
+
+- But inferring causal order from LLMs/imperfect experts through pairwise prompting leads to many cycles 
+- To get more accurate graphs with significantly fewer cycles, they also introduce a triplet-based prompting strategy
+- Fewer cycles because a pair occurs more than once, at least for graphs with more than 3 nodes. This can lead to conflicting edges. The final relationship (A->B, B->A, or no edge) is voted for by a majority vote.
+- ZITAT: For practical usage, we use the variance in votes for each pair to motivate a final edge removal step that ensures that no cycles are present in the final output. 
+- Using the estimated causal order for downstream discovery and effect inference leads to fewer errors
+
+
+Getting causal order from imperfect Experts
+
+There are different ways to get the causal order from an imperfect Expert such as an LLM. Using just a single prompt for all nodes would likely lead to information overload, which can lead to suboptimal results. To avoid this, we could use two nodes, the smallest possible set for inferring causal order, for every prompt and infer causal order by going through all possible TODO pairs (or tuples?) one at a time and then aggregating the outputs. But this leads to many cycles in the final graph (leading to $D_{top} > 0$). To reduce these cycles, they propose a triplet-based query strategy, which even has a better performance than the pairwise strategy.
+
+The algorithm
+
+Include Algorithm graphic
+
+Compute all possible triplets from the given node set. 
+
+Then ask the expert, in our case the LLM, to generate the causal DAG. In this paper, the prompt also included the context, the request to give the reasoning behind the edges, node descriptions, and examples for the wanted input and output structure. (TODO did we use the prompt? we could just make a cite)
+
+Count the number of appearances of the three orientations (A $\rightarrow$ B, B $\rightarrow$ A, or no connection) for each pair of nodes. If one of the three orientations appears in more than 50\% of the triplets it can be in, it will be picked for the final causal graph. If it is equal to or lower than 50\% for all orientations, the expert will be asked to pick one through reasoning. 
+
+Merge the computed orientations for every pair to get the final DAG from which we can extract the causal order.
+
+This causal order might only be true for the graph we produced. It does not have to be true for the ground truth DAG of the problem. This is what leads do $D_{top} \neq 0$. 
+
+This order can now be used as a prior for causal discovery algorithms and effect inference.
+
+In this paper, they used PC and CaMML.
+
+
+- TODO I don't get it. Is this even important? ZITAT:
+ While the causal order is a simpler structure than the full graph, it is useful by itself, aiding downstream
+tasks like effect inference and graph discovery. For example, correct causal order is sufficient for
+identifying a valid backdoor set for any pair of treatment and outcome variables. Moreover, a
+causal order-based metric, topological divergence (Dtop), correlates better with the effect estimation
+accuracy than commonly used graph metrics such as structural hamming distance (SHD). Specifically,
+Dtop = 0 if and only if the causal order provides a valid backdoor adjustment set. In contrast, there
+exist predicted graphs where the identified backdoor set is accurate (and topological divergence is
+zero), but their SHD can be arbitrarily high. In addition to effect inference, causal order can also
+be used to improve the accuracy of graph discovery algorithms. To this end, we provide simple
+algorithms for using causal order to improve existing causal discovery algorithms.
+
+\cite{causal_order}\\
+
+\subsection{}
+\label{subsection-}
+
+%-------------------------------------------------------------------------------------
+\chapter{Methodology}
+\label{chapter-Methodology}
+
+First, I installed the library from \cite{causal_learn} with all its prerequisites (and the prerequisites of the prerequisites namely pygraphviz). 
+
+
+The sachs dataset was downloaded from https://github.com/snarles/causal/blob/master/bnlearn_files/sachs.data.txt
+
+
+For the PC algorithm I used the default PC algorithm from \cite{causal-learn} which resembles the algorithm from \cite{pc}. I only changed it, so it would not show the progress in the terminal.
+PC is the same as in \cite{causal-order}.
+
+The SCORE algorithm is from \cite{score}. I've copied some of the code files from their Github page into my project and installed all their libraries to use the programmed algorithm.
+SCORE is the same as in \cite{causal-order}.
+
+Given the variables:
+1.
+
+Go through the following steps 1 by 1 and justify/(give your reasoning for) each.
+1. Build all possible (n! / 3!(n−3)!) with n=4 triplets. 
+
+
+
+\section{}
+\label{section-}
+
+\subsection{}
+\label{subsection-}
+%-------------------------------------------------------------------------------------
+\chapter{Results and Discussion}
+\label{chapter-Results}
+
+Nur graphisch oder auch rechnerisch?
+
+Soll ich was am prompting verändern?
+
+Neue Datensätze testen? weil vermutlich schlechtere ergebnisse
+
+Deepseek? CoT-Model oder nicht?
+
+Mit 4 statt 3? Hypotese schnellere laufzeit aber schlechtere ergbnisse.
+
+\section{}
+\label{section-}
+
+\subsection{}
+\label{subsection-}
+ 
+%-------------------------------------------------------------------------------------
+\chapter{Conclusion}
+\label{chapter-Conclusion}
+%\chapter{Zusammenfassung und Ausblick}
+
+\section{}
+\label{section-}
+
+\subsection{}
+\label{subsection-}
+
+
+
+Compile with Lualatex > Bibtex > Lualatex x2\\
+Shitft Option 7 for backslash\\
+option q for «\\
+shitt option q for »\\.
+\\.  
+\\ alle " und » einheitlich gemacht? 
+\\ Tuple erklärt?
+\\ Ground Truth immer groß?
+\\Strg+f suche nach casual und ersetzte durch causal TODO
+\\ STRG+F suche nach descendant und descendent und entscheide dich für eine schreibweise
+\\Bei CHatGPT hochladen NACHDEM du lernen aus deinen prompt rausgenommen hast und nach rechtschreibung (US englisch), richtigkeit, consisteny in style und scientific style fragen.
+\\Plagiatscheck?
+\\.  
+\\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\\If something changes in the Bib:
+\\Delete the <Name>-bibtex-entries.bib
+\\Run LuaLatex, then Bibtex, then Lualatex again twice
+\\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\\Glossary? TODO
+
+
+%%%
+% 
+% Bibliographies
+%
+%%%
+%
+%   \UzLThesisSetup{biblatex={firstinits=false}}
+%
+% will switch off shortened first names. Normally, you will not need
+% this key in your preamble. 
+% 
+% Note that the bibtex program is used as the 'backend' of biblatex
+% by default (rather than biber, which is the preferred program of
+% biblatex). This means that you can (and must) run *bibtex* after you
+% have run lualatex on your thesis. If you wish to use biber instead
+% of bibtex, say 'biblatex={backend=biber}'. 
+% 
+%%%
+%
+% The following environment is optional. It allows you to keep the
+% bibtex entries for your thesis right here in the thesis file. What
+% happens is that each time this tex file is processed, the contents
+% of the following environment gets written to the file
+% \jobname-bibtex-entries.bib (this file gets overwritten each
+% time). Independently, \addbibresource{\jobname-bibtex-entries.bib}
+% is always called if the file \jobname-bibtex-entries.bib
+% exists. 
+%
+% In result, you can edit and keep the bibliography's bibtex entries
+% right here. If you change something here, run latex, then bibtex,
+% then latex once more.
+%
+% If you would like to manage the bibtex entries in a separate file,
+% remove the below environment, delete the \jobname-bibtex-entries.bib
+% file and instead write
+%
+% \addbibresource{filename-of-your-bibtex-file.bib}
+%
+% in the preamble.
+%
+%%%
+%
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% If something changes in the Bib:
+% Delete the <Name>-bibtex-entries.bib
+% Run LuaLatex, then Bibtex, then Lualatex again twice
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%
+\begin{bibtex-entries}
+%Actually used
+
+@inproceedings{causal_order,
+title={Causal Order: The Key to Leveraging Imperfect Experts in Causal Inference},
+author={Aniket Vashishtha and Abbavaram Gowtham Reddy and Abhinav Kumar and Saketh Bachu and Vineeth N. Balasubramanian and Amit Sharma},
+booktitle={Causality and Large Models @NeurIPS 2024},
+year={2024},
+url={https://openreview.net/forum?id=3fzCBL6ar7},
+urldate =	{2025-01-22},
+}
+
+@misc{causal_graphs,
+      title={Can large language models build causal graphs?}, 
+      author={Stephanie Long and Tibor Schuster and Alexandre Piché},
+      year={2024},
+      eprint={2303.05279v2},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2303.05279v2}, 
+      urldate =	{2025-01-22},
+}
+
+@misc{causal_reasoning,
+      title={Causal Reasoning and Large Language Models: Opening a New Frontier for Causality}, 
+      author={Emre Kıcıman and Robert Ness and Amit Sharma and Chenhao Tan},
+      year={2024},
+      eprint={2305.00050v3},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2305.00050v3}, 
+      urldate =	{2025-01-22},
+}
+
+@book{mixtape,
+  title={Causal Inference: The Mixtape},
+  author={Scott Cunningham},
+  year={2021},
+  publisher={Yale University Press},
+  url={https://mixtape.scunning.com}
+  urldate =	{2025-01-25},
+}
+
+@online{causal_course,
+      title={Introduction to Causal Inference}, 
+      author={Brady Neal},
+      year={2020},
+      url={https://www.bradyneal.com/causal-inference-course}, 
+      urldate =	{2025-01-30},
+}
+
+@article{causal_learn,
+  title={Causal-learn: Causal discovery in python},
+  author={Zheng, Yujia and Huang, Biwei and Chen, Wei and Ramsey, Joseph and Gong, Mingming and Cai, Ruichu and Shimizu, Shohei and Spirtes, Peter and Zhang, Kun},
+  journal={Journal of Machine Learning Research},
+  volume={25},
+  number={60},
+  pages={1--8},
+  year={2024},
+  urldate =	{2025-03-11},
+  url= {https://causal-learn.readthedocs.io/en/latest/index.html}
+}
+
+@book{pc,
+  title={Causation, prediction, and search},
+  author={Spirtes, Peter and Glymour, Clark and Scheines, Richard},
+  year={2001},
+  publisher={MIT press}
+}
+
+
+@InProceedings{score,
+  title = 	 {Score Matching Enables Causal Discovery of Nonlinear Additive Noise Models},
+  author =       {Rolland, Paul and Cevher, Volkan and Kleindessner, Matth{\"a}us and Russell, Chris and Janzing, Dominik and Sch{\"o}lkopf, Bernhard and Locatello, Francesco},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {18741--18753},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/rolland22a/rolland22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/rolland22a.html},
+  urldate = {2025-03-12},
+  abstract = 	 {This paper demonstrates how to recover causal graphs from the score of the data distribution in non-linear additive (Gaussian) noise models. Using score matching algorithms as a building block, we show how to design a new generation of scalable causal discovery methods. To showcase our approach, we also propose a new efficient method for approximating the score’s Jacobian, enabling to recover the causal graph. Empirically, we find that the new algorithm, called SCORE, is competitive with state-of-the-art causal discovery methods while being significantly faster.}
+}
+
+
+%Delete Later
+
+
+
+
+
+
+
+@Book{Knuth1986,
+  author =       {Hier Löschen},
+  title =        {The \TeX book},
+  publisher =    {Addison-Wesley},
+  year =         {1986},
+}
+
+@Book{Lamport1994,
+  author =       {Leslie Lamport},
+  title =        {\LaTeX: A Document Preparation System},
+  publisher =    {Addison-Wesley},
+  edition =      {Second edition},
+  year =         {1994},
+}
+
+@TechReport{Kernighan1974,
+  author =       {Brian Kernighan},
+  title =        {Programming in C – A Tutorial},
+  institution =  {Bell Laboratories},
+  year =         {1974}
+}
+
+@Manual{Tantau2019,
+  author =       {Till Tantau},
+  title =        {The Ti\emph kZ and PGF Packages: Manual for version 3.1.3},
+  institution =  {Institut für Theoretische Informatik, Universität zu Lübeck},
+  year =         {2019},
+  url =          {https://github.com/pgf-tikz/pgf}
+}
+
+@Book{Alley1996,
+  author =       {Michael Alley},
+  title =        {The Craft of Scientific Writing},
+  publisher =    {Springer},
+  year =         {1996},
+  edition =      {Third Edition},
+}
+
+@Book{DowneyF13,
+  author =       {R. G. Downey and M. R. Fellows},
+  title =        {Fundamentals of Parameterized Complexity},
+  series =       {Texts in Computer Science},
+  publisher =    {Springer},
+  year =         2013,
+  doi =          {10.1007/978-1-4471-5559-1},
+}
+
+@Manual{biblatex,
+  title =        {The \textsc{BibLaTeX} package},
+  subtitle =     {Sophisticated Bibliographies in \LaTeX},
+  author =       {Kime, Philip and Lehman, Philipp},
+  url =          {https://github.com/plk/biblatex},
+  urldate =      {2019-06-11},
+  date =         {2018-10-30},
+  version =      {3.12}
+}
+
+@Manual{varioref,
+  title =        {The \textsc{varioref} package},
+  subtitle =     {Intelligent page references},
+  author =       {Mittelbach, Frank},
+  url =          {http://www.ctan.org/pkg/varioref},
+  urldate =      {2019-06-11},
+  date =         {2016-02-16},
+  version =      {1.5c}
+}
+
+@Manual{hyperref,
+  title =        {The \textsc{hyperref} package},
+  subtitle =     {Extensive support for hypertext in \LaTeX},
+  author =       {Rahtz, Sebastian and Oberdiek, Heiko},
+  url =          {https://github.com/ho-tex/hyperref},
+  urldate =      {2019-06-11},
+  date =         {2018-11-30},
+  version =      {6.88e}
+}
+
+@Manual{babel,
+  title =        {The \textsc{babel} package},
+  subtitle =     {Multilingual support for Plain \TeX\ or \LaTeX},
+  author =       {Braams, Johannes L. and Bezos López, Javier},
+  url =          {http://www.ctan.org/pkg/babel},
+  urldate =      {2019-06-11},
+  date =         {2019-06-03},
+  version =      {3.32}
+}
+
+@Manual{fontspec,
+  title =        {The \textsc{fontspec} package},
+  subtitle =     {Advanced font selection in Xe\LaTeX\ and Lua\LaTeX},
+  author =       {Robertson, Will},
+  url =          {http://www.ctan.org/pkg/fontspec},
+  urldate =      {2019-06-11},
+  version =      {2.7c}
+}
+
+@Manual{url,
+  title =        {The \textsc{url} package},
+  subtitle =     {Verbatim with \textsc{url}-sensitive line breaks},
+  author =       {Arseneau, Donald},
+  url =          {http://www.ctan.org/pkg/url},
+  urldate =      {2019-06-11},
+  date =         {2013-09-16},
+  version =      {3.4}
+}
+
+@Manual{amsmath,
+  title =        {The \textsc{amsmath} package},
+  subtitle =     {\AmS\ mathematical facilities for \LaTeX},
+  author =       {{The \LaTeX\ Team}},
+  url =          {http://www.ams.org/tex/amslatex.html},
+  urldate =      {2019-06-11}, 
+  date =         {2017-09-02},
+  version =      {2.17a}
+}
+
+@Book{Beutelspacher2009,
+  title =        {„Das ist o.\,B.\,d.\,A.\ trivial!“: Tipps und Tricks zur
+                  Formulierung mathematischer Gedanken (Mathematik für
+                  Studienanfänger)},
+  author =       {Albrecht Beutelspacher},
+  year =         {2009},
+  edition =      {Ninth, updated edition},
+  publisher =    {Vieweg+Teubner Verlag},
+  doi =          {10.1007/978-3-8348-9075-7},
+}
+
+
+
+\end{bibtex-entries}
+
+
+
+% If you need to have an appendix (I advise against it), insert it
+% here using, first, \appendix and then \chapter and then,
+% possibly, \section. 
+%
+ \appendix
+%
+\chapter{Technical Appendix}
+%\chapter{Anhang}
+%
+\section{Experimental Parameters} % possibly
+\section{USB-Stick mit dem Projekt TODO}
+%
+% Again, I advise against using an appendix.
+
+
+\end{document}
+
+%  LocalWords:  LaTeX tex moretexcs Lübeck pdf uzl lualatex bibtex th
+%  LocalWords:  TechReport Kernighan Lamport's Tantau's Tantau cls kZ
+%  LocalWords:  Mustermann emacs oldschool pdflatex texmf utf biber
+%  LocalWords:  biblatex Alphabetische Bibliographie Numerische VIIa
+%  LocalWords:  varioref german Einleitung Beiträge dieser Arbeit xml
+%  LocalWords:  Ergebnisse Verwandte Arbeiten Aufbau nucleotide VIIc
+%  LocalWords:  ensembl amino phylogenetic Alexa Siri decrypt versa
+%  LocalWords:  cryptographic pre nondeterministic deterministically
+%  LocalWords:  Beutelspacher Untersuchungen zum genetischen sep llcc
+%  LocalWords:  Beispiel tikz jpg png Alegrya Kasimir Malewitsch PGF
+%  LocalWords:  Lamport Institut für Theoretische Informatik zu url
+%  LocalWords:  Universität Springer DowneyF Downey Parameterized doi
+%  LocalWords:  BibLaTeX Kime Philipp urldate Mittelbach hyperref Lua
+%  LocalWords:  Rahtz Oberdiek Heiko Braams Bezos López fontspec Das
+%  LocalWords:  Arseneau amsmath ist Tipps und zur Formulierung
+%  LocalWords:  mathematischer Gedanken Mathematik Studienanfänger
+%  LocalWords:  Albrecht Vieweg Teubner Verlag

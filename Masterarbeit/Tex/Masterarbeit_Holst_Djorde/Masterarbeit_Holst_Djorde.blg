@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Masterarbeit_Holst_Djorde.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Masterarbeit_Holst_Djorde-blx.bib
+Database file #2: Masterarbeit_Holst_Djorde-bibtex-entries.bib
+Warning--I didn't find a database entry for "newpaper"
+Warning--I didn't find a database entry for "oldpaper"
+Biblatex version: 3.19
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 8 entries,
+            6399 wiz_defined-function locations,
+            1250 strings with 10198 characters,
+and the built_in function-call counts, 61407 in all, are:
+= -- 4481
+> -- 1761
+< -- 369
++ -- 2388
+- -- 1056
+* -- 4072
+:= -- 7133
+add.period$ -- 0
+call.type$ -- 8
+change.case$ -- 180
+chr.to.int$ -- 118
+cite$ -- 14
+duplicate$ -- 6297
+empty$ -- 4964
+format.name$ -- 493
+if$ -- 12003
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 0
+newline$ -- 273
+num.names$ -- 405
+pop$ -- 2587
+preamble$ -- 1
+purify$ -- 216
+quote$ -- 0
+skip$ -- 1704
+stack$ -- 0
+substring$ -- 7880
+swap$ -- 1322
+text.length$ -- 277
+text.prefix$ -- 7
+top$ -- 1
+type$ -- 259
+warning$ -- 0
+while$ -- 854
+width$ -- 0
+write$ -- 266
+(There were 2 warnings)

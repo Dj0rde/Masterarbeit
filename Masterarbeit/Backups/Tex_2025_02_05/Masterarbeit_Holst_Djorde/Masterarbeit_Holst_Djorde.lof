@@ -1,0 +1,15 @@
+\babel@toc {english}{}\relax 
+\babel@toc {german}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {german}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {german}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The logo of the University of Lübeck. It consists of the university's seal together with the text “Universität zu Lübeck”. The corporate design manual of the university requires this logo to be put at the upper left corner of title pages of university publications.}}{4}{figure.1.2}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces The logo of the University of Lübeck, but now with a “paper-like background”. Note how, compared to Figure~\ref {fig-logo}, a much stronger impression is created that this figure depicts something printed.}}{6}{figure.1.3}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces An example visualization created with Ti\emph kZ, see the template source for the code details. In the graphic, a number of predefined styles are used (like \uzl@int@cmd@Latex {node} or \uzl@int@cmd@Latex {small block}), each of which can be passed an optional color. These styles are setup automatically to produce visually pleasing shapes that go well with the overall layout and fonts.}}{7}{figure.1.4}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces The same visualization as in Figure~\ref {fig-tikz-white}, but with the \uzl@int@cmd@Latex {thesis box shapes} option set. As can be seen, this option causes the predefined shapes to be filled. It is a matter of taste whether one prefers this over the \uzl@int@cmd@Latex {outline} style from Figure~\ref {fig-tikz-white}.}}{8}{figure.1.5}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Once more, the same visualization as in Figure~\ref {fig-tikz-white}, but now with \uzl@int@cmd@Latex {thesis flat shapes} option set. This option creates more ``flat'' shapes (without a border). Once more it is a matter of taste what one prefers.}}{9}{figure.1.6}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces The logo of the University of Lübeck. It consists...}}{10}{figure.1.10}%
